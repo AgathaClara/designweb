@@ -1,65 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hierarquia Tipográfica</title>
+    <!-- Link para Tailwind CSS via CDN (para teste rápido; em produção, use build local) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Container centralizado com fundo suave, shadow e rounded -->
+    <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg py-8 px-6 mt-10">
+        <!-- Título (h1) com cor de alto contraste e tamanho grande -->
+        <h1 class="text-4xl font-bold text-gray-900 mb-4 leading-tight">
+            Título Principal da Página
+        </h1>
+       
+        <!-- Subtítulo (h2) com cor de contraste médio e tamanho menor -->
+        <h2 class="text-2xl font-semibold text-gray-700 mb-6 leading-snug">
+            Subtítulo Secundário
+        </h2>
+       
+        <!-- Primeiro parágrafo com cor de baixo contraste e espaçamento -->
+        <p class="text-base text-gray-600 mb-4 leading-relaxed tracking-wide">
+            Este é o primeiro parágrafo do conteúdo. Ele utiliza uma cor de texto com contraste adequado para leitura confortável, sem competir com o título. O espaçamento vertical (mb-4) garante consistência visual.
+        </p>
+       
+        <!-- Segundo parágrafo com mesmas classes para consistência -->
+        <p class="text-base text-gray-600 mb-4 leading-relaxed tracking-wide">
+            Aqui vai o segundo parágrafo, mantendo a hierarquia. A escolha de text-gray-600 oferece bom contraste contra o fundo branco, enquanto text-gray-900 no h1 destaca a importância.
+        </p>
+    </div>
 
-    <header class="header">
-        <nav class="container dividir-extremidades">
-            <ul class="menu menu-navegacao display-flex lista-sem-estilo">
-                <li><a href="#">Estudos de caso</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Entre em contato</a></li>
-            </ul>
-            <ul class="menu menu-social display-flex lista-sem-estilo">
-                <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-behance"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-
-        <section class="container">
-            <div class="perfil">
-                <h1>Bruno Nakamura</h1>
-                <h3>UX / Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
-                </button>
-            </div>
-            <figure class="foto">
-                <img src="assets/img/perfil.png" alt="Foto do Bruno Nakamura">
-            </figure>
-        </section>
-        <section class="container alinhar-coluna last-jobs">
-            <h5>Trabalhou em:</h5>
-            <ul class="lista-sem-estilo display-flex">
-                <li><img src="assets/img/img-job-1.svg" alt=""></li>
-                <li><img src="assets/img/img-job-2.svg" alt=""></li>
-                <li><img src="assets/img/img-job-3.svg" alt=""></li>
-                <li><img src="assets/img/img-job-4.svg" alt=""></li>
-                <li><img src="assets/img/img-job-5.svg" alt=""></li>
-            </ul>
-        </section>
-
-    </main>
-    
+    <!--
+    DECISÃO VISUAL DOCUMENTADA:
+    - Hierarquia de cores: text-gray-900 para h1 (alto contraste, chama atenção); text-gray-700 para h2 (contraste médio, subordinação); text-gray-600 para p (baixo contraste, leitura fluida sem fadiga).
+    - Tamanhos de texto testados: text-4xl para h1 (impactante, mas não excessivo); text-2xl para h2 (equilibrado); text-base para p (padrão legível). Evitei tamanhos muito grandes para manter responsividade.
+    - Espaçamentos: py-8 e px-6 no container para padding interno; mb-4 em elementos para separação vertical consistente; mt-10 no container para margem superior.
+    - Fundo e efeitos: bg-gray-50 no body para suavidade; bg-white no container com shadow-lg e rounded-lg para simular um "bloco de conteúdo" elevado.
+    - Outros: leading-tight/snug/relaxed para controle de linha; tracking-wide para melhor legibilidade em parágrafos.
+    -->
 </body>
 </html>
